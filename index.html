@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Progress Bar</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Simple, traffic-based pricing</h1>
+        <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+      </div>
+
+      <div class="card">
+        <header>
+          <div class="priceHolder">
+            <p class="pageViews">10K PAGEVIEWS</p>
+            <div class="slideBar">
+              <label for="slider"></label>
+              <div>
+                <input type="range" min="0" max="100" value="0" step="25" />
+              </div>
+            </div>
+
+            <div class="priceMonat">
+              <span class="dollar">8.00 </span>
+              <span class="mounth">/month</span>
+            </div>
+          </div>
+
+          <div class="offer">
+            <p>Monthly Billing</p>
+            <label class="switch">
+              <input type="checkbox" value="checked" id="mYrange" />
+              <span class="slider round"></span>
+            </label>
+            <p id="year_billing">Yearly Billing</p>
+          </div>
+        </header>
+
+        <footer>
+          <div class="footer_holder">
+            <div class="list">
+              <p>Unlimited websites</p>
+              <p>100% data ownership</p>
+              <p>Email reports</p>
+            </div>
+
+            <a class="btn" href="#">Start my trial</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
