@@ -131,6 +131,7 @@ footer {
   position: relative;
   font-size: 10px;
   text-align: center;
+  padding-top: 3px;
 }
 
 #year_billing {

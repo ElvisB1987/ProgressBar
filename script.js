@@ -34,8 +34,8 @@ chekbox.addEventListener("change", function () {
 
 // input Range fill progress with color and change inner html text
 
-input.addEventListener(
-  "change",
+input.oninput =
+
   function () {
     var min = this.min || 0,
       max = this.max || 100,
@@ -46,6 +46,7 @@ input.addEventListener(
       str = "";
 
     this.setAttribute("value", this.value);
+
 
     val = this.value + "% 100%";
     str +=
@@ -66,6 +67,6 @@ input.addEventListener(
         prices[inputValue / 25] * 0.25
       ).toFixed(2);
     }
-  },
-  false
-);
+  };
+
+
